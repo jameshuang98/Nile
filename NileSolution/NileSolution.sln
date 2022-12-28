@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.Web", "Nile.Web\Nile.Web.csproj", "{79229122-59C7-43EF-A8EC-8AF8C46A8B51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.API", "Nile.API\Nile.API.csproj", "{162A67E2-0614-40F5-9D45-61D06EE42486}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{79229122-59C7-43EF-A8EC-8AF8C46A8B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79229122-59C7-43EF-A8EC-8AF8C46A8B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79229122-59C7-43EF-A8EC-8AF8C46A8B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162A67E2-0614-40F5-9D45-61D06EE42486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162A67E2-0614-40F5-9D45-61D06EE42486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162A67E2-0614-40F5-9D45-61D06EE42486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162A67E2-0614-40F5-9D45-61D06EE42486}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
