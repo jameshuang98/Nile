@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Nile.API.Data;
+
 namespace Nile.API
 {
     public class Program
@@ -12,6 +15,10 @@ namespace Nile.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddDbContextPool<NileDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("NileOnlineConnection"))
+            );
 
             var app = builder.Build();
 
