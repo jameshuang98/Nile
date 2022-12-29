@@ -390,6 +390,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Nile.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Nile.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nile.Models.dll": {}
+        }
       }
     },
     "net6.0/browser-wasm": {
@@ -774,6 +784,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Nile.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Nile.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nile.Models.dll": {}
         }
       }
     }
@@ -1537,12 +1557,18 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Nile.Models/1.0.0": {
+      "type": "project",
+      "path": "../Nile.Models/Nile.Models.csproj",
+      "msbuildProject": "../Nile.Models/Nile.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.7",
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.7"
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.7",
+      "Nile.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1571,7 +1597,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\James\\Documents\\Code\\Projects\\Nile\\NileSolution\\Nile.Models\\Nile.Models.csproj": {
+              "projectPath": "C:\\Users\\James\\Documents\\Code\\Projects\\Nile\\NileSolution\\Nile.Models\\Nile.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

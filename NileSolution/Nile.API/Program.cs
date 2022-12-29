@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Net.Http.Headers;
 using Nile.API.Data;
 using Nile.API.Repositories;
 using Nile.API.Repositories.Contracts;
@@ -32,6 +33,12 @@ namespace Nile.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseCors(policy =>
+                policy.WithOrigins("http://localhost:7256", "https://localhost:7256")
+                .AllowAnyMethod()
+                .WithHeaders(HeaderNames.ContentType)
+            );
 
             app.UseHttpsRedirection();
 

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nile.Web", "Nile.Web\Nile.W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nile.API", "Nile.API\Nile.API.csproj", "{162A67E2-0614-40F5-9D45-61D06EE42486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.Models", "Nile.Models\Nile.Models.csproj", "{F9A6BDEF-AE8B-42D4-8AF5-832542293D8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nile.Models", "Nile.Models\Nile.Models.csproj", "{F9A6BDEF-AE8B-42D4-8AF5-832542293D8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
