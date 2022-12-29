@@ -1025,6 +1025,16 @@
             "rid": "win"
           }
         }
+      },
+      "Nile.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Nile.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nile.Models.dll": {}
+        }
       }
     }
   },
@@ -3575,6 +3585,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Nile.Models/1.0.0": {
+      "type": "project",
+      "path": "../Nile.Models/Nile.Models.csproj",
+      "msbuildProject": "../Nile.Models/Nile.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3582,6 +3597,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.1",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.15.1",
+      "Nile.Models >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -3611,7 +3627,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\James\\Documents\\Code\\Projects\\Nile\\NileSolution\\Nile.Models\\Nile.Models.csproj": {
+              "projectPath": "C:\\Users\\James\\Documents\\Code\\Projects\\Nile\\NileSolution\\Nile.Models\\Nile.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

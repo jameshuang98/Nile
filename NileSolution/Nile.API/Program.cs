@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Nile.API.Data;
+using Nile.API.Repositories;
+using Nile.API.Repositories.Contracts;
 
 namespace Nile.API
 {
@@ -19,6 +21,8 @@ namespace Nile.API
             builder.Services.AddDbContextPool<NileDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("NileOnlineConnection"))
             );
+
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
             var app = builder.Build();
 
