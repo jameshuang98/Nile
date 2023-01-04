@@ -22,6 +22,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/James/Documents/Code/Projects/Nile/NileSolution/Nile.Web/Pages/DisplayError.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/James/Documents/Code/Projects/Nile/NileSolution/Nile.Web/Pages/ProductDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/James/Documents/Code/Projects/Nile/NileSolution/Nile.Web/Pages/Products.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -33,6 +41,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/James/Documents/Code/Projects/Nile/NileSolution/Nile.Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/James/Documents/Code/Projects/Nile/NileSolution/Nile.Web/Pages/DisplayLoading.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUxvYWRpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-oj9colwjxa
 
 [C:/Users/James/Documents/Code/Projects/Nile/NileSolution/Nile.Web/Pages/DisplayProducts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVByb2R1Y3RzLnJhem9y

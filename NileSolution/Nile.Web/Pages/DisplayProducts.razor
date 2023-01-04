@@ -1,9 +1,14 @@
-﻿@inherits DisplayProductsBase
+﻿@using System
+@using System.Globalization
+@inherits DisplayProductsBase
+
+<p>@CultureInfo.CurrentCulture.Name</p>
+<p>@CultureInfo.CurrentCulture</p>
 
 @foreach(var item in Products)
 {
     <div class="col-md-3 mb-2">
-        <a href="#">
+        <a href="/ProductDetails/@item.Id">
             <div class="card">
                 <img class="img-thumbnail" src="@item.ImageURL">
                 <div class="card-body">
@@ -11,7 +16,7 @@
                         @item.Name
                     </h5>
                     <p class="card-text">
-                        <b>@item.Price.ToString("C")</b>
+                        <b>@item.Price.ToString("C2", CultureInfo.CurrentCulture)</b>
                     </p>
                 </div>
             </div>

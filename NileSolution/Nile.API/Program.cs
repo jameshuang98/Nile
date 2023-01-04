@@ -23,7 +23,10 @@ namespace Nile.API
                 options.UseSqlServer(builder.Configuration.GetConnectionString("NileOnlineConnection"))
             );
 
+            // Register repository types for dependency injection
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
+
 
             var app = builder.Build();
 
