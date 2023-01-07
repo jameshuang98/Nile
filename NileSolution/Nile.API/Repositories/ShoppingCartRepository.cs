@@ -53,9 +53,17 @@ namespace Nile.API.Repositories
 
         }
 
-        public Task<CartItem> DeleteItem(int id)
+        public async Task<CartItem> DeleteItem(int id)
         {
-            throw new NotImplementedException();
+            var item = await this.nileDbContext.CartItems.FindAsync(id);
+
+            if (item != null)
+            {
+                this.nileDbContext.CartItems.Remove(item);
+                await this.nileDbContext.SaveChangesAsync();
+            }
+
+            return item;
         }
 
         public async Task<CartItem> GetItem(int id)
