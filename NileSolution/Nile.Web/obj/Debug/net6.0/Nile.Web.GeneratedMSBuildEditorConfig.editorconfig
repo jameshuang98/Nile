@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydE1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/James/Documents/Code/Projects/Nile/NileSolution/Nile.Web/Pages/Checkout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/James/Documents/Code/Projects/Nile/NileSolution/Nile.Web/Pages/DisplayError.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUVycm9yLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
