@@ -1,6 +1,8 @@
-﻿using Nile.Models.Dtos;
+﻿using Newtonsoft.Json;
+using Nile.Models.Dtos;
 using Nile.Web.Services.Contracts;
 using System.Net.Http.Json;
+using System.Text;
 
 namespace Nile.Web.Services
 {
@@ -8,10 +10,14 @@ namespace Nile.Web.Services
     {
         private readonly HttpClient httpClient;
 
+        public event Action<int> OnShoppingCartChanged;
+
         public ShoppingCartService(HttpClient httpClient)
         {
             this.httpClient = httpClient;
         }
+
+
         public async Task<CartItemDto> AddItem(CartItemToAddDto cartItemToAddDto)
         {
             try
@@ -81,6 +87,38 @@ namespace Nile.Web.Services
             }
             catch (Exception)
             {
+                throw;
+            }
+        }
+
+        public void RaiseEventOnShoppingCartChanged(int totalQty)
+        {
+            // checking if OnShoppingCartChanged event has subscribers
+            if (OnShoppingCartChanged != null)
+            {
+                OnShoppingCartChanged.Invoke(totalQty); 
+            }
+        }
+
+        public async Task<CartItemDto> UpdateQty(CartItemQtyUpdateDto cartItemQtyUpdateDto)
+        {
+            try
+            {
+                var jsonRequest = JsonConvert.SerializeObject(cartItemQtyUpdateDto);
+                var content = new StringContent(jsonRequest, Encoding.UTF8, "application/json-patch+json");
+
+                var response = await httpClient.PatchAsync($"api/ShoppingCart/{cartItemQtyUpdateDto.CartItemId}", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<CartItemDto>();
+                }
+                return null;
+
+            }
+            catch (Exception)
+            {
+                //Log exception
                 throw;
             }
         }
