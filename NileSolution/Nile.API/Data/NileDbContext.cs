@@ -14,8 +14,8 @@ namespace Nile.API.Data
         {
             base.OnModelCreating(modelBuilder);
 
-			//Products
-			//Beauty Category
+			// Products
+			// Beauty Category
 			modelBuilder.Entity<Product>().HasData(new Product
 			{
 				Id = 1,
@@ -71,7 +71,7 @@ namespace Nile.API.Data
 				CategoryId = 1
 
 			});
-			//Electronics Category
+			// Electronics Category
 			modelBuilder.Entity<Product>().HasData(new Product
 			{
 				Id = 6,
@@ -137,7 +137,7 @@ namespace Nile.API.Data
 				Qty = 60,
 				CategoryId = 3
 			});
-			//Furniture Category
+			// Furniture Category
 			modelBuilder.Entity<Product>().HasData(new Product
 			{
 				Id = 12,
@@ -199,7 +199,7 @@ namespace Nile.API.Data
 				Qty = 73,
 				CategoryId = 2
 			});
-			//Shoes Category
+			// Shoes Category
 			modelBuilder.Entity<Product>().HasData(new Product
 			{
 				Id = 18,
@@ -261,7 +261,7 @@ namespace Nile.API.Data
 				CategoryId = 4
 			});
 
-			//Add users
+			// Add users
 			modelBuilder.Entity<User>().HasData(new User
 			{
 				Id = 1,
@@ -275,7 +275,7 @@ namespace Nile.API.Data
 
 			});
 
-			//Create Shopping Cart for Users
+			// Create Shopping Cart for Users
 			modelBuilder.Entity<Cart>().HasData(new Cart
 			{
 				Id = 1,
@@ -288,26 +288,30 @@ namespace Nile.API.Data
 				UserId = 2
 
 			});
-			//Add Product Categories
+			// Add Product Categories
 			modelBuilder.Entity<ProductCategory>().HasData(new ProductCategory
 			{
 				Id = 1,
-				Name = "Beauty"
+				Name = "Beauty",
+				IconCSS = "fas fa-spa"
 			});
 			modelBuilder.Entity<ProductCategory>().HasData(new ProductCategory
 			{
 				Id = 2,
-				Name = "Furniture"
+				Name = "Furniture",
+				IconCSS = "fas fa-couch"
 			});
 			modelBuilder.Entity<ProductCategory>().HasData(new ProductCategory
 			{
 				Id = 3,
-				Name = "Electronics"
+				Name = "Electronics",
+				IconCSS = "fas fa-headphones"
 			});
 			modelBuilder.Entity<ProductCategory>().HasData(new ProductCategory
 			{
 				Id = 4,
-				Name = "Shoes"
+				Name = "Shoes",
+				IconCSS = "fas fa-shoe-prints"
 			});
 		}
     
