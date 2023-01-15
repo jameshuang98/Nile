@@ -36,5 +36,13 @@ namespace Nile.API.Repositories
             var products = await this.nileDbContext.Products.ToListAsync();
             return products;
         }
+
+        public async Task<IEnumerable<Product>> GetItemsByCategory(int id)
+        {
+            var products = await (from product in nileDbContext.Products
+                                  where product.CategoryId == id
+                                  select product).ToListAsync();
+            return products;
+        }
     }
 }
