@@ -13,6 +13,9 @@ namespace Nile.Web.Pages
         [Inject]
         public IShoppingCartService shoppingCartService { get; set; }
 
+        [Inject]
+        public IManageCartItemsLocalStorageService ManageCartItemsLocalStorageService { get; set; }
+
         protected IEnumerable<CartItemDto> ShoppingCartItems { get; set; }
 
         protected int TotalQty { get; set; }
@@ -23,7 +26,7 @@ namespace Nile.Web.Pages
         {
             try
             {
-                ShoppingCartItems = await shoppingCartService.GetItems(HardCoded.UserId);
+                ShoppingCartItems = await ManageCartItemsLocalStorageService.GetCollection();
                 if (ShoppingCartItems != null)
                 {
                     Guid orderGuid = Guid.NewGuid();
@@ -50,7 +53,6 @@ namespace Nile.Web.Pages
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
