@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YZBhT8aw7qMSmQs49WxmTlbxkICgnK+wnpbRUIII9/pPi6kF/NDfDiRv5HJzA7bfX/ro5cdw5FkWZo9g3KKN4g==",
+  "dgSpecHash": "FbjcMitKoR4oYOFdHD52v1J+ntjoH7KXG7GmNt5n/aOh8GbqzAdN4iYmpF6yU9FsDgoolh+PC9FSovwJy8cC8g==",
   "success": true,
   "projectFilePath": "C:\\Users\\James\\Documents\\Code\\Projects\\Nile\\NileSolution\\Nile.Web\\Nile.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\James\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\James\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.7\\microsoft.aspnetcore.authorization.6.0.7.nupkg.sha512",
     "C:\\Users\\James\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.7\\microsoft.aspnetcore.components.6.0.7.nupkg.sha512",
     "C:\\Users\\James\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.7\\microsoft.aspnetcore.components.analyzers.6.0.7.nupkg.sha512",

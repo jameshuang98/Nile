@@ -92,7 +92,7 @@ namespace Nile.API.Controllers
             {
                 var products = await productRepository.GetItemsByCategory(categoryId);
                 var productDtos = products.ConvertToDto();
-
+                 
                 return Ok(productDtos);
             }
             catch (Exception)
