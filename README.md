@@ -1,19 +1,16 @@
 # Nile
 
-A mini e-commerce application built with Blazor that allows users to browse for products, add products to their cart, and checkout.
+A mini e-commerce application built with Blazor and ASP.NET Web API that allows users to browse for products, product categories, add products to their cart, and checkout using PayPal. Data is seeded into the SQL Database through code-based migrations with Entity Framework Core 7.0.1.
 
-### Stripe Testing
-
-Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
-
-More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
 
 * .NET 6.0
+* Entity Framework Core 7.0.1
 * SQL Server 2019
 * Blazor WebAssembly
 * Bootstrap v5
-* RESTful Web API
+* ASP.NET Web API
+* PayPal Payment Gateway
 
 
