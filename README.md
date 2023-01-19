@@ -14,3 +14,12 @@ A mini e-commerce application built with Blazor and ASP.NET Web API that allows 
 * PayPal Payment Gateway
 
 
+## Screenshots of App
+
+<h4>Screenshot of Home page</h4>
+
+!["Screenshot of Home page"](https://github.com/jameshuang98/Nile/blob/main/NileSolution/Nile.Web/wwwroot/screenshots/home_page.png?raw=true)
+
+<h4>Screenshot of Checkout page</h4>
+
+!["Screenshot of Home page"](https://github.com/jameshuang98/Nile/blob/main/NileSolution/Nile.Web/wwwroot/screenshots/checkout.png?raw=true)
