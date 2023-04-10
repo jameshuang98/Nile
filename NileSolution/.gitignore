@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Build files
+Nile.API/obj/
+Nile.Models/obj/
+Nile.Web/obj/
+.vs/
