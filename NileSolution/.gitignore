@@ -405,3 +405,4 @@ Nile.API/bin/
 Nile.Models/bin/
 Nile.Web/bin/
 .vs/
+*/.vs
