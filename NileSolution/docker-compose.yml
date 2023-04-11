@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  nile.web:
+    image: ${DOCKER_REGISTRY-}nileweb
+    build:
+      context: .
+      dockerfile: Nile.Web\Dockerfile
